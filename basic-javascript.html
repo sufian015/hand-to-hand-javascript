@@ -3,42 +3,382 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Basic javascript</title>
+     <title>javascript</title>
 </head>
 <body>
-<!-- 
-     <h2 id="first">My first javascript</h2>
-     
-     <p id="docs">What can javascript do?</p>
-     <button type="button" onclick="document.getElementById('docs').innerHTML='hello javascript'">click me</button> -->
 
+     <h2>Basic javascript</h2>
 
-     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, et.</p> -->
-
-     
-
-     <!-- light project -->
-     <!-- <button onclick="document.getElementById('my-img').src='./pic_bulbon.gif'">turn on</button>
-
-     <img id="my-img" src="/pic_bulboff.gif" width="100px" alt="light">
-
-     <button onclick="document.getElementById('my-img').src='./pic_bulboff.gif'">turn off</button> -->
 
 
      <script>
 
-          /*variable declaration*/
+          /* 1. conditional statements */
 
-          // let a=20;
-          // let b=20;
-          // let c=b+a;
-          // document.write(c)
+          /* if else statement */
 
-          const a=10;
+     //    var whatDay='sunday';
+
+     //    if (whatDay==='friday') {
+     //      console.log('it is weekend');
           
+     //    } else if(whatDay==='saturday'){
+     //      console.log('it is particular to closed');
+     //    } else{
+     //      console.log('it is sunday');
+     //    }
+          
+     /*switch statement*/
+
+     // var rollNo=5;
+
+     // switch (rollNo) {
+     //      case 1:
+     //           console.log('sagar');
+               
+     //           break;
+     //      case 2:
+     //           console.log('Rohan');
+               
+     //           break;
      
-          document.write(a);
+     //      default:
+     //           console.log('Tasnim');
+     //           break;
+     // }
+
+     /* 2. javascript basic loop */
+
+       /* for loop */
+
+     // for(var i=0; i<10; i++) {
+
+     //      console.log('--->'+i)
+
+
+     // }
+
+     /* do while loop */
+
+     // var i = 0;
+
+     // do {
+     //      console.log('***'+i);
+     //      i++
+     // } while (i<20);
+
+     /*while loop */
+     // var i=0;
+
+     // while (i<15) {
+     //      console.log(i);
+     //      i++;
           
+     // }
+
+     // for(var i=0; i<10; i++) {
+     //      if (i===6) {
+     //           break;
+               
+     //      }
+     //      console.log(i);
+     // }
+
+     // loop 5 steps cholbe then stop hoy jabe
+
+     //  for(var i=0; i<10; i++) {
+     //      if (i===3) {
+     //           continue;
+               
+     //      }
+     //      console.log(i);
+     // }
+
+     // loop 3 skip kore baki gulo print korbe
+
+
+     /* Arrays */
+
+     // var arrayName=['rahim', 'karima', 'Rafiq', 'Jabbar'];
+
+     // console.log(arrayName);
+
+     // console.log(arrayName[0]);
+     // arrayName[1]='sakib';
+
+     /* last item added */
+     // arrayName.push('sakib');
+     // arrayName.push('maruf');
+     // console.log(arrayName);
+
+     /* last item remove */
+
+     // arrayName.pop();
+     // console.log(arrayName);
+
+     /* first item added */
+
+     // arrayName.unshift('maruf');
+     // console.log(arrayName);
+
+     /*first item removed */
+
+     // arrayName.shift();
+     // console.log(arrayName);
+
+     /* splice method */
+
+     // koto theke suru hobe koyta item remove hobe...
+
+     // arrayName.splice(1,3);
+     // console.log(arrayName);
+
+     // var arraySplice=arrayName.splice(2);
+     // console.log(arrayName);
+
+     // splice the array means first 2 character split korlam...tahole arrySplice variable e last 2 character output asbe...
+
+     // console.log(arraySplice);
+
+
+     /* index of*/
+
+     // var indexchr=arrayName.indexOf('Rafiq');
+     // console.log(indexchr);
+
+     /* Object */
+
+
+     // object and array is a some kind of Data structure...
+
+     // object 2type e define kora jae...
+
+     // var rahim=new Object();
+
+     // var rahim={
+     //      fullName:'Rahim Miya',
+     //      age:23,
+     //      address:'Dhaka',
+     //      welcomeMsg:function(){
+     //           console.log('Hi there');
+
+     //      }
+     // }
+
+     // console.log(rahim);
+
+     // how to access object properties
+
+     // console.log(rahim.fullName);
+     // console.log(rahim.address);
+     // console.log(rahim['age']);
+     // console.log(rahim['fullName']);
+
+     // how to add properties in object
+
+     // rahim.job='web developer';
+
+     // console.log(rahim);
+
+     // rahim.aboutFunction=function() {
+     //      console.log('this is function');
+     // }
+     // console.log(rahim);
+     // console.log(rahim.aboutFunction());;
+     // console.log(rahim.welcomeMsg());
+
+     // when we access all item in objct using loop
+
+     // for(items in rahim){
+     //      console.log(items);
+     //      console.log(items.fullName);
+     //      // console.log(items.welcomeMsg());
+          
+
+     // }
+
+
+     // object in array
+
+     // var objArr={
+     //      normal:'normal item',
+     //      name:['rahim','karim','Rafiq'],
+     //      age:[20,25,30]
+     // }
+
+     // console.log(objArr.normal);
+     // console.log(objArr.name);
+     // console.log(objArr.age);
+     // console.log(objArr.name[1]);
+     // console.log(objArr.age[1]);
+
+
+
+     /* Array in object */
+
+     // var arrObj=[
+     //      'Jamir Uddin',
+     //      {
+     //           name:'moon',
+     //           age:27,
+     //           job:'student'
+     //      },
+     //      'Bangladesh'
+     // ]
+
+     // console.log(arrObj);
+     // console.log(arrObj[0]);
+     // console.log(arrObj[1].name);
+     // console.log(arrObj[1].age);
+     // console.log(arrObj[2]);
+
+
+     /* functions */
+
+     // function functionName(params) {
+     //      // statements
+
+     //      // This is function statement
+     // }
+
+     // var functionName=function(){
+
+     //      //This is function expression
+
+     // }
+
+
+     // example 1...
+
+     // function functionName() {
+     //      console.log('Hello I am a function');
+          
+     // };
+
+     // functionName();
+
+     // parameters and arguments
+
+     // function sumMechines(a,b) {
+
+     //      var sum=a+b;
+     //      return sum;
+          
+     // }
+
+     // console.log(sumMechines(2,2));
+     // console.log(sumMechines(10,10));
+
+
+     // example 2...
+
+     // function printMyName(name,age) {
+     //      console.log('My name is '+ name+' my age is '+age)
+     // }
+
+     // printMyName('Jamir',27);
+
+
+     // example 3...
+
+
+     // function callMyName(name,callBack){
+
+     //      var myAge=20;
+     //      callBack(myAge);
+     //      console.log('welcome mr '+name);
+
+     // }
+
+     // function hello(age){
+     //      console.log(' my age is '+ age);
+     // }
+
+     // callMyName('Atikur Rahman', hello)
+
+
+     // example 4...
+
+     // function welcomeMsg(name) {
+
+     //      console.log('Welcome Mr '+ name);
+
+     //      return function againFunc(menu) {
+
+     //           console.log('Do you like this '+menu + ' Mr '+name);
+               
+     //      }
+          
+     // }
+
+     // welcomeMsg('Tamim')('barbique');
+
+
+     // example 5...
+
+     // function changeValue(a) {
+     //      console.log(' value of inside function '+ a )
+          
+     //      a=10;
+          
+     //      console.log(' value of inside function after changing '+a);
+          
+     // }
+
+     // var a=100;
+
+     // console.log(' value of outside function before applied '+a);
+
+     // changeValue(a);
+
+     // console.log(' value of outside function after applied '+a);
+
+     
+
+
+     // ekhane  a te value pass kora hoyeche just original value that,s called copy..That was no effect of on main value a..
+     // Because it,s primitive data type...
+     // when that,s non-primitive data type then let's see example...
+
+
+     // function aFunc(a){
+
+     //      console.log('before changing my name is '+a.name);
+
+     //      a.name= 'sobuj';
+
+     //      console.log('after changing my name is '+a.name);
+
+
+
+     // }
+
+     // var a={
+     //      name:'Jamir'
+     // }
+
+     // aFunc(a);
+
+
+
+
+
+     
+
+
+
+
+
+
+
+     
+
+
+    
+
+
+
+
 
 
 
